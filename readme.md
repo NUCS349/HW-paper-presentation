@@ -1,4 +1,6 @@
-Paper List:
+
+
+Paper List that you can directly draw from:
 
 1. Nonlinear dimensionality reduction by locally linear embedding. By Roweis, Sam T., and Lawrence K. Saul. science 290.5500 (2000): 2323-2326.
 
@@ -51,9 +53,10 @@ Summary: We introduce Knowledge Vault, a Web-scale probabilistic knowledge base 
 
 Summary: We propose new algorithms for approximate nearest neighbor matching and evaluate and compare them with previous algorithms.  In order to scale to very large data sets that would otherwise not fit in the memory of a single machine, we propose a distributed nearest neighbor matching framework that can be used with any of the algorithms described in the paper.
 
-14. Rapid object detection using a boosted cascade of simple features by Viola and Jones,
+14. Playing atari with deep reinforcement learning by Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Alex Graves, Ioannis Antonoglou, Daan Wierstra, Martin Riedmiller
 
-Summary: Haar-like features are digital image features used in object recognition. They owe their name to their intuitive similarity with Haar wavelets and were used in the first real-time face detector.[1]
+Summary: We present the first deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The model is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards.
+
 
 15. Trends in extreme learning machines: a review, by Huang, G., Huang, G., Song, S., & You, K. (2015).  Neural Networks,  (cited 323 times, HIC: 0 , CV: 0)
 
@@ -97,6 +100,77 @@ Summary: We present a new technique called" t-SNE" that visualizes high-dimensio
 
 Summary: In recent years, supervised learning with convolutional networks (CNNs) has seen huge adoption in computer vision applications. Comparatively, unsupervised learning with CNNs has received less attention. In this work we hope to help bridge the gap between the success of CNNs for supervised learning and unsupervised learning
 
-25. Playing atari with deep reinforcement learning by Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Alex Graves, Ioannis Antonoglou, Daan Wierstra, Martin Riedmiller
+25. The tree ensemble layer: Differentiability meets conditional computation (Hazimeh, H., Ponomareva, N., Mol, P., Tan, Z., & Mazumder, R. (2020, November).)
 
-Summary: We present the first deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The model is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards.
+Summary: Neural networks and tree ensembles are state-of-the-art learners, each with its unique
+statistical and computational advantages. We aim to combine these advantages by
+introducing a new layer for neural networks, composed of an ensemble of differentiable
+decision trees (aka soft trees). While differentiable trees demonstrate promising results in the
+literature, they are typically slow in training and inference as they do not support conditional
+computation.
+
+26. Yolov4: Optimal speed and accuracy of object detection ( A Bochkovskiy, CY Wang, HYM Liao )
+
+Summary: There are a huge number of features which are said to improve Convolutional Neural
+Network (CNN) accuracy. Practical testing of combinations of such features on large
+datasets, and theoretical justification of the result, is required. Some features operate on
+certain models exclusively and for certain problems exclusively, or only for small-scale
+datasets; while some features, such as batch-normalization and residual-connections, are
+applicable to the majority of models, tasks, and datasets.
+
+27. ResNeSt: Split-Attention Networks ( H Zhang, C Wu, Z Zhang, Y Zhu, H Lin, Z Zhang )
+
+Summary: It is well known that featuremap attention and multi-path representation are important for visual recognition. In this paper, we present a modularized architecture, which applies the channel-wise attention on different network branches to leverage their success in capturing cross-feature interactions and learning diverse representations. Our design results in a simple and unified computation block, which can be parameterized using only a few variables. Our model, named ResNeSt, outperforms EfficientNet in accuracy and latency trade-off on image classification.
+
+28. Training with Quantization Noise for Extreme Model Compression  (  Fan, Angela; Stock, Pierre; Graham, Benjamin; Grave, Edouard; Gribonval, Remi; Jegou, Herve; Joulin, Armand )
+
+We tackle the problem of producing compact models, maximizing their accuracy for a given model size. A standard solution is to train networks with Quantization Aware Training, where the weights are quantized during training and the gradients approximated with the Straight-Through Estimator. 
+
+29. End-to-end object detection with transformers ( N Carion, F Massa, G Synnaeve, N Usunier )
+
+Summary: We present a new method that views object detection as a direct set prediction problem. Our approach streamlines the detection pipeline, effectively removing the need for many hand-designed components like a non-maximum suppression procedure or anchor generation that explicitly encode our prior knowledge about the task. 
+
+30. Language models are few-shot learners (TB Brown, B Mann, N Ryder, M Subbiah)
+
+Summary: Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by
+pre-training on a large corpus of text followed by fine-tuning on a specific task. While
+typically task-agnostic in architecture, this method still requires task-specific fine-tuning
+datasets of thousands or tens of thousands of examples. By contrast, humans can generally
+perform a new language task from only a few examples or from simple instructions-
+something which current NLP systems still largely struggle to do. 
+
+31. Unsupervised translation of programming languages (MA Lachaux, B Roziere, L Chanussot)
+
+Summary: A transcompiler, also known as source-to-source translator, is a system that converts source
+code from a high-level programming language (such as C++ or Python) to another.
+Transcompilers are primarily used for interoperability, and to port codebases written in an
+obsolete or deprecated language (eg COBOL, Python 2) to a modern one. 
+
+32. DeepFaceDrawing: Deep Generation of Face Images from Sketches ( SY Chen, W Su, L Gao, S Xia, H Fu  )
+
+Summary: Recent deep image-to-image translation techniques allow fast generation of face images
+from freehand sketches. However, existing solutions tend to overfit to sketches, thus
+requiring professional sketches or even edge maps as input. To address this issue, our key
+idea is to implicitly model the shape space of plausible face images and synthesize a face
+image in this space to approximate an input sketch. We take a local-to-global approach. 
+
+33. Learning to Match Distributions for Domain Adaptation ( Chaohui Yu, Jindong Wang, Chang Liu, Tao Qin, Renjun Xu, Wenjie Feng, Yiqiang Chen, Tie-Yan Liu )
+
+Summary: When the training and test data are from different distributions, domain adaptation is needed to reduce dataset bias to improve the model's generalization ability. Since it is difficult to directly match the cross-domain joint distributions, existing methods tend to reduce the marginal or conditional distribution divergence using predefined distances such as MMD and adversarial-based discrepancies. However, it remains challenging to determine which method is suitable for a given application since they are built with certain priors or bias. Thus they may fail to uncover the underlying relationship between transferable features and joint distributions
+
+34. Tensorflow quantum: A software framework for quantum machine learning ( M Broughton, G Verdon, T McCourt, AJ Martinez ... )
+
+Summary: We introduce TensorFlow Quantum (TFQ), an open source library for the rapid prototyping of
+hybrid quantum-classical models for classical or quantum data. This framework offers high-
+level abstractions for the design and training of both discriminative and generative quantum
+models under TensorFlow and supports high-performance quantum circuit simulators. 
+
+
+Here are some more links where you can draw papers from if you cannot find something interesting in the list above:
+
+1. https://analyticsindiamag.com/best-machine-learning-papers-2019-nips-icml-ai/
+2. https://www.topbots.com/top-ml-research-papers-2019/
+3. https://www.topbots.com/ai-machine-learning-research-papers-2020/
+4. https://www.linkedin.com/pulse/top-7-machine-learning-papers-2019-laxmi-kant-tiwari/
+5. https://www.kdnuggets.com/2017/04/top-20-papers-machine-learning.html
+6. https://towardsdatascience.com/10-overlooked-machine-learning-advances-in-the-last-10-decades-2e9fe9f2f073
